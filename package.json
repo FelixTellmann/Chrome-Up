@@ -1,0 +1,28 @@
+{
+  "name": "0015-Chrome-Up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "popup.js",
+  "dependencies": {
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "@zeit/next-sass": "^1.0.1",
+    "node-sass": "^4.13.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.8",
+    "@types/react": "^16.9.31",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

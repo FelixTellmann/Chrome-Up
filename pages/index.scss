@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin-left: calc(100vw - 100%);
+  /* Load system fonts */
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
+  /* Make type rendering look crisper */
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  /* Disable auto-enlargement of small text in Safari */
+  -moz-osx-font-smoothing: grayscale;
+  /* Enable kerning and optional ligatures */
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Form elements render using OS defaults,
+ * so font-family inheritance must be specifically declared
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, td, th, input, textarea {
+  background-color: #ebeced;
+  font-family: 'Lato', Segoe UI, Tahoma, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 19px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  outline: none;
+  background: none;
+}
