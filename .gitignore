@@ -6,6 +6,7 @@ node_modules/
 .idea
 .export
 .out
+export
 
 # production server output
 dist
