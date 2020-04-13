@@ -11,6 +11,10 @@
     "default_popup": "out/index.html"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "out/*"
   ]
 }

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-html {
+*, *:before, *:after {
   box-sizing: border-box;
-  margin-left: calc(100vw - 100%);
+}
+
+html {
+  box-sizing: border-box;/*
+  margin-left: calc(100vw - 100%);*/
   /* Load system fonts */
   font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
   /* Make type rendering look crisper */
@@ -29,8 +33,11 @@ textarea {
   font-family: inherit;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  margin: 0;
 }
 
 body, td, th, input, textarea {
@@ -42,11 +49,12 @@ body, td, th, input, textarea {
   text-rendering: optimizeLegibility;
 }
 
-body {
-  margin: 0;
-}
-
 input {
   outline: none;
   background: none;
+}
+
+.popup {
+  position: relative; /**/
+  padding: 30px
 }

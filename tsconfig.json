@@ -27,6 +27,10 @@
       ]
     }
   },
+  "types": [
+    "@types/chrome",
+    "node"
+  ],
   "exclude": [
     "node_modules"
   ],
