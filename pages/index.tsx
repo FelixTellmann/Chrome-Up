@@ -24,10 +24,11 @@ https://s2.googleusercontent.com/s2/favicons?domain=www.stackoverflow.com
 
 function Index(ctx) {
   const [value, setValue] = useState(0);
+  const [isLoading, setIsloading] = useState(true);
 
   return (
-    <div className="popup">
-      <Border />
+    <div className="popup" onClick={() => setIsloading(!isLoading)}>
+      <Border loading={isLoading} width="6px" duration={4} color="linear-gradient(180deg, #f54222, #ff7020)" />
       <header className="popup__section header">
         Felix Tellmann - Web Development
       </header>
