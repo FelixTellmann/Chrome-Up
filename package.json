@@ -1,30 +1,47 @@
 {
-  "name": "0015-Chrome-Up",
-  "version": "1.0.0",
-  "description": "",
-  "main": "popup.js",
-  "dependencies": {
-    "@types/chrome": "0.0.103",
-    "@zeit/next-sass": "^1.0.1",
-    "dotenv": "^8.2.0",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.3.4",
-    "ngrok": "^3.2.7",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
-    "@types/node": "^13.9.8",
-    "@types/react": "^16.9.31",
-    "typescript": "^3.8.3"
-  },
+  "name": "rename-me",
+  "version": "0.0.0",
+  "description": "enter description",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "next export"
+    "start": "next start",
+    "export": "npm run build && next export",
+    "test": "jest --watch",
+    "test-all": "jest --watchAll"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Felix Tellmann",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "*",
+    "isomorphic-unfetch": "*",
+    "ngrok": "*"
+  },
+  "devDependencies": {
+    "sass": "*",
+    "react": "*",
+    "react-dom": "*",
+    "next": "*",
+    "@types/mysql": "*",
+    "@types/chrome": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "babel-jest": "*",
+    "identity-obj-proxy": "*",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "jest": "*",
+    "@types/jest": "*",
+    "ts-jest": "*",
+    "typescript": "*",
+    "react-test-renderer": "*",
+    "react-icons": "*",
+    "serverless-mysql": "*",
+    "url-loader": "*",
+    "express-mysql-session": "*",
+    "express-session": "*",
+    "isomorphic-unfetch": "*",
+    "dotenv": "*",
+    "mysql2": "*"
+  }
 }

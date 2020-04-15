@@ -4,22 +4,24 @@ import fetch from 'isomorphic-unfetch';
 import './index.scss';
 import { Border } from 'components';
 
+const Theme = {
+  colors: {
+    accentPrimary: '#f54222',
+    accentSecondary: '#ffa000',
+  },
+};
+
 
 export type Props = AppProps
 
 /*
 https://s2.googleusercontent.com/s2/favicons?domain=www.stackoverflow.com
-
         chrome.storage.sync.set({key: value}, function() {
-          console.log('Value is set to ' + value);
-        });
+          console.log('Value is set to ' + value);        });
 
         chrome.storage.sync.get(['key'], function(result) {
           console.log('Value currently is ' + result.key);
         });
-
-
-
 */
 
 function Index(ctx) {
@@ -28,7 +30,8 @@ function Index(ctx) {
 
   return (
     <div className="popup" onClick={() => setIsloading(!isLoading)}>
-      <Border loading={isLoading} width="6px" duration={4} color="linear-gradient(180deg, #f54222, #ff7020)" />
+      <Border loading={isLoading} width="6px" duration={4}
+              color={`linear-gradient(180deg, ${Theme.colors.accentPrimary}, ${Theme.colors.accentSecondary})`} />
       <header className="popup__section header">
         Felix Tellmann - Web Development
       </header>
