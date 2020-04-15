@@ -1,6 +1,6 @@
 {
-  "name": "rename-me",
-  "version": "0.0.0",
+  "name": "chrome-up",
+  "version": "0.0.1",
   "description": "enter description",
   "scripts": {
     "dev": "next",
@@ -18,7 +18,8 @@
     "ngrok": "*"
   },
   "devDependencies": {
-    "sass": "*",
+    "@zeit/next-sass": "*",
+    "node-sass": "*",
     "react": "*",
     "react-dom": "*",
     "next": "*",

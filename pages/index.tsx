@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
-import App, { AppProps } from 'next/app';
-import fetch from 'isomorphic-unfetch';
 import './index.scss';
-import { Border } from 'components';
 
-const Theme = {
-  colors: {
-    accentPrimary: '#f54222',
-    accentSecondary: '#ffa000',
-  },
-};
-
-
-export type Props = AppProps
 
 /*
 https://s2.googleusercontent.com/s2/favicons?domain=www.stackoverflow.com
@@ -25,12 +13,11 @@ https://s2.googleusercontent.com/s2/favicons?domain=www.stackoverflow.com
 */
 
 function Index(ctx) {
-  const [value, setValue] = useState(0);
-  const [isLoading, setIsloading] = useState(true);
 
   return (
-    <div className="popup" onClick={() => setIsloading(!isLoading)}>
-      <Border loading={isLoading} width="6px" duration={4}
+    <div >
+      index.tsx
+      {/*<Border loading={isLoading} width="6px" duration={4}
               color={`linear-gradient(180deg, ${Theme.colors.accentPrimary}, ${Theme.colors.accentSecondary})`} />
       <header className="popup__section header">
         Felix Tellmann - Web Development
@@ -47,7 +34,7 @@ function Index(ctx) {
         })}>get Result
         </button>
         <div>{value}</div>
-      </section>
+      </section>*/}
     </div>
   );
 }
