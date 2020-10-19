@@ -6,7 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export",
+    "export": "set NODE_ENV=export&& npm run build && next export -o chrome-extension/out",
     "test": "jest --watch",
     "test-all": "jest --watchAll"
   },

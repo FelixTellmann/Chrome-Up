@@ -16,4 +16,5 @@ module.exports = withSass(withCSS({
     config.resolve.alias['pages'] = path.join(__dirname, 'pages');
     return config;
   },
+  assetPrefix: process.env.NODE_ENV === 'export' ? '/out/': ''
 }));
